@@ -15,9 +15,11 @@ def main():
 
     if not os.path.exists('skip_image') :
         st.write('Making Image')
-        image = ai.make_image(prompt)
+        # image = ai.make_image(prompt)
+        ai.upscale4x()
 
     st.image('image.png')
+    st.image('big_image.png')
 
 if __name__ == "__main__":
     main()
